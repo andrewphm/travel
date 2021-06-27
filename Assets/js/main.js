@@ -40,6 +40,19 @@ window.addEventListener('scroll', scrollHeader)
 
 
 /*==================== SWIPER DISCOVER ====================*/
+var swiper = new Swiper(".discover__container", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    // infinite loop
+    loop: true,
+    spaceBetween: 32,
+    coverflowEffect: {
+      rotate: 0,
+    },
+});
+
 
 /*==================== VIDEO ====================*/
 

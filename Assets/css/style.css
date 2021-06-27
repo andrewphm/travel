@@ -357,8 +357,88 @@ input{
 }
 
 /*========== ABOUT ==========*/
+.about__data{
+    text-align: center;
+}
+
+.about__container{
+    row-gap: 2.5rem;
+}
+
+.about__description{
+    margin-bottom: var(--mb-2);
+}
+
+.about__img{
+    display:flex;
+    column-gap: 1rem;
+    align-items: center;
+    justify-content: center; 
+} 
+
+.about__img-one{
+    width:130px;
+}
+
+.about__img-two{
+    width: 180px;
+}
+
+.about__img-overlay{
+    overflow: var(--img-hidden);
+}
+
+.about__img-one,
+.about__img-two{
+    transition: var(--img-transition);
+}
+
+.about__img-one:hover,
+.about__img-two:hover{
+    transform: var(--img-scale);
+}
 
 /*========== DISCOVER ==========*/
+.discover__card{
+    position: relative;
+    width: 200px;
+    overflow: var(--img-hidden);
+}
+
+.discover__data{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1rem;
+}
+
+.discover__title,
+.discover__description{
+    color: var(--white-colour);
+}
+
+.discover__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-25);
+}
+
+.discover__description{
+    display: block;
+    font-size: var(--smaller-font-size);
+}
+
+.discover__img{
+    transition: var(--img-transition);
+}
+
+.discover__img:hover{
+    transform: var(--img-scale);
+}
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right{
+    background-image: none;
+}
+
 
 /*========== EXPERIENCE ==========*/
 
