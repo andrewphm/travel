@@ -34,7 +34,7 @@ function scrollHeader(){
     const header = document.getElementById('header')
     // When the scroll is greater than 100 viewport height, add the scroll-header class to the header tag
     //check to see if window.scrollY
-    if(this.scrollY >= 100) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+    if(window.scrollY >= 100) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
 
@@ -55,5 +55,41 @@ var swiper = new Swiper(".discover__container", {
 
 
 /*==================== VIDEO ====================*/
+const videoFile = document.getElementById('video-file'),
+      videoButton = document.getElementById('video-button'),
+      videoIcon = document.getElementById('video-icon')
+
+const playPause = () => {
+    if(videoFile.paused){
+        // Play video
+        videoFile.play()
+
+        // Change the icon from play to pause
+        videoIcon.classList.add('ri-pause-line');
+        videoIcon.classList.remove('ri-play-line');
+    } else {
+        videoFile.pause()
+        // Change icons back to idle state
+        videoIcon.classList.add('ri-play-line');
+        videoIcon.classList.remove('ri-pause-line');
+    }
+}
+
+videoButton.addEventListener('click', playPause);
+
+function finalVideo(){
+    // Video ends, icon change
+    videoIcon.classList.remove('ri-pause-line')
+    videoIcon.classList.add('ri-play-line')
+}
+// When the video ends, reset button icon
+videoFile.addEventListener('ended', finalVideo);
+
 
 /*==================== SHOW SCROLL UP ====================*/
+
+/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+
+/*==================== SCROLL REVEAL ANIMATION ====================*/
+
+/*==================== DARK LIGHT THEME ====================*/
