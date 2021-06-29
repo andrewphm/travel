@@ -28,4 +28,4 @@ Mobile-first fully responsive website with animations and light/dark mode.
 
 ![Preview](/preview.png)
 
-[Click here to view live](http://www.andrewpham.com/travel)
+[Click here to view live](http://www.andrewpham.ca/travel/)
