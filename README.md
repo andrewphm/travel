@@ -1,13 +1,12 @@
 # Tavel mockup page
 
----
 ## Case study
 Mobile-first fully responsive website with animations and light/dark mode. 
 
 ## Features
 - Custom framework 
 - Fully responsive
-- Side bar for small screen
+- Sidebar for smaller screens
 - Animations
 - Dark/Light mode
 - Strong focus on using CSS variables and relative units
